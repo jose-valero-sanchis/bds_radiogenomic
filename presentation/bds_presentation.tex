@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation - LaTeX Template
+% Version 2.0 (March 8, 2022)
+% Original Template: https://www.LaTeXTemplates.com
+% Author: Vel (vel@latextemplates.com)
+% License: CC BY-NC-SA 4.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Este modelo de apresentação foi 
+% criado a partir do modelo de Giovanni Spadaro.
+% Disponível em: 
+% https://github.com/Giovo17/presentation-template-unict-lm-data
+%
+% Adaptado por Lucas Amaral Taylor para criar uma versão especial 
+% para os alunos de Matemática e Estatística da USP (IME-USP).
+% Disponível em:
+% https://github.com/lucasamtaylor01/IME-template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{beamer}
+
+\graphicspath{{img/}}
+
+\usepackage[alf]{abntex2cite}
+\usepackage{booktabs}
+\usepackage{palatino}
+\usepackage[default]{opensans}
+\usepackage{subcaption}
+\usepackage{array}
+\input{config/code_langs}
+
+%----------------------------------------------------------------------------------------
+%	COLORES
+%--------------------------------------------------------------------------------\textendash-------
+
+\usetheme{Boadilla}
+
+\definecolor{primaryColor}{RGB}{20,45,105}
+\definecolor{secondaryColor}{RGB}{0,100,160}
+
+\setbeamercolor{structure}{fg=primaryColor}
+\setbeamercolor{palette primary}{bg=primaryColor, fg=white}
+\setbeamercolor{palette secondary}{bg=secondaryColor, fg=white}
+\setbeamercolor{title}{bg=primaryColor, fg=white}
+
+\setbeamercolor{headline}{bg=secondaryColor, fg=white}
+\setbeamercolor{section in head/foot}{bg=primaryColor, fg=white}
+\setbeamercolor{subsection in head/foot}{bg=secondaryColor, fg=white}
+
+\setbeamercolor{author in head/foot}{bg=primaryColor, fg=white} 
+\setbeamercolor{title in head/foot}{bg=secondaryColor, fg=white}
+\setbeamercolor{date in head/foot}{bg=primaryColor, fg=white}
+\setbeamercolor{page number in head/foot}{bg=primaryColor, fg=white} 
+
+\useinnertheme{circles}
+\useoutertheme{miniframes} 
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{mini frame}{}
+\setbeamertemplate{mini frame in current section}{}
+\setbeamertemplate{mini frame in current subsection}{}
+\setbeamertemplate{mini frame in other section}{}
+\setbeamertemplate{mini frame in other subsection}{}
+
+\setbeamertemplate{headline}{%
+  \begin{beamercolorbox}[ht=2.5ex,dp=1ex,center]{section in head/foot}%
+    \usebeamerfont{section in head/foot}%
+    \insertsectionhead%
+  \end{beamercolorbox}%
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+%------------------
+%	PRESENTATION
+%------------------
+
+\title[Project 4]{Radiogenomic Prediction of Breast Cancer Subtypes Using the TCGA Dataset}
+\author[Biomedical Data Science]{\normalsize Lucas Fayolle \& Jose Valero} 
+\institute[BDS]{Biomedical Data Science \\ (ETSINF - UPV)} 
+\date[2024/2025]{Course 2024/2025} 
+
+%------------------
+
+\begin{document}
+
+%------------------
+%	TÍTULO
+%------------------
+
+\begin{frame}
+	\begin{figure}
+		\includegraphics[width=0.45\linewidth]{img/upv_logo.png}
+	\end{figure}
+	\titlepage
+\end{frame}
+
+%------------------
+%	ÍNDICE
+%------------------
+
+\begin{frame}
+	\frametitle{Table of Contents}
+	\tableofcontents 
+\end{frame}
+
+%------------------
+%	SECCIONES
+%------------------
+
+\include{sections/section00}
+
+%------------------
+
+\end{document}
