@@ -1,0 +1,30 @@
+Objetivo principal
+------------------
+
+Desarrollar un clasificador de machine learning que prediga los subtipos moleculares de cáncer de mama (Luminal A, Luminal B, HER2-enriched, Basal-like) utilizando características radiómicas extraídas de imágenes de resonancia magnética (MRI)
+
+
+Objetivos específicos
+---------------------
+
+Para todos los objetivos, añadir a los datos la variable "molecular subtype of breast cancer" disponible en "multigenic_assays"
+
+1. Utilizar las características radiómicas dadas
+	- EDA
+	- Pipeline práctica (varianza, boruta...)
+	- Modelo
+	- Evaluación
+2. Obtener características radiómicas a partir de las segmentaciones
+	- PyRadiomics
+	- Almacena datos
+	- Seguir pasos del objetivo 1
+3. Cruzar las características radiómicas con los ensayos multigénicos (ver si añadir estos datos mejora el desempeño)
+	- Correlaciones entre características radiómicas y puntuaciones de los ensayos multigénicos
+	- Añadir las puntuaciones como variables predictoras
+	- Entrenar modelos
+	- Evaluar
+
+4. Integrar datos clínicos en el modelo
+	- Añadir variables como la edad, el estadio tumoral... al modelo
+	- Entrenar modelos
+	- Evaluar
