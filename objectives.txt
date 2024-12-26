@@ -23,7 +23,6 @@ Para todos los objetivos, añadir a los datos la variable "molecular subtype of 
 	- Añadir las puntuaciones como variables predictoras
 	- Entrenar modelos
 	- Evaluar
-
 4. Integrar datos clínicos en el modelo
 	- Añadir variables como la edad, el estadio tumoral... al modelo
 	- Entrenar modelos
