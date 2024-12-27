@@ -14,7 +14,7 @@ Para todos los objetivos, añadir a los datos la variable "molecular subtype of 
 	- Pipeline práctica (varianza, boruta...)
 	- Modelo
 	- Evaluación
-2. Obtener características radiómicas a partir de las segmentaciones
+2. Obtener características radiómicas a partir de las imágenes
 	- PyRadiomics
 	- Almacena datos
 	- Seguir pasos del objetivo 1
