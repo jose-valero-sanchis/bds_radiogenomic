@@ -330,9 +330,9 @@ The inclusion of clinical data, particularly hormone receptor status and tumor s
 
 \subsection{Impact of multigenic assays on prediction}
 
-The addition of genomic data from multigenic assays further enhanced the model’s performance. The Radiomic + Multigenic model achieved an F1-score of 0.74, outperforming the radiomic-only model and the clinical-only models. Notably, the Only Multigenic model achieved a comparable F1-score of 0.60, indicating that genomic features alone can provide substantial predictive power. However, when combined with radiomic features, the predictive accuracy improved, suggesting that radiomic data provide complementary information about tumor phenotype that is not captured by genomic assays alone. This finding supports the integration of imaging and genomic data for more robust subtype classification.
+The addition of genomic data from multigenic assays further enhanced the model’s performance. The Radiomic + Multigenic model achieved an F1-score of 0.74, outperforming the radiomic-only model. Notably, the Only Multigenic model achieved a comparable F1-score of 0.60, indicating that genomic features alone can provide substantial predictive power. However, when combined with radiomic features, the predictive accuracy improved, suggesting that radiomic data provide complementary information about tumor phenotype that is not captured by genomic assays alone. This finding supports the integration of imaging and genomic data for more robust subtype classification.
 
-\subsection{Detailed Performance of the Best Model}
+\subsection{Detailed performance of the best model}
 
 Due to the strong performance of the Radiomic + Full clinical data model, we consider it relevant to explore its performance using the confusion matrix from the test set. As shown in Figure~\ref{fig:confusion_matrix}, the model accurately predicts the Basal and HER2-enriched subtypes, demonstrating reliable classification for these categories. However, it tends to confuse Luminal A and Luminal B subtypes, as evidenced by the misclassification of several Luminal A instances as Luminal B.
 
@@ -380,19 +380,19 @@ Future work could address these limitations through the following actions:
 
 \bibitem{breast_cancer} World Health Organization. "Cancer: Fact Sheets." Available: https://www.who.int/news-room/fact-sheets/detail/cancer. [Accessed: Jan. 5, 2025].
 
-\bibitem{b1} Komen, S. Foundation. Molecular Subtypes of Breast Cancer. Komen.org. Available at: https://www.komen.org/breast-cancer/diagnosis/molecular-subtypes (Accessed January 4, 2025).
+\bibitem{b1} S. Komen Foundation. "Molecular Subtypes of Breast Cancer." Available: https://www.komen.org/breast-cancer/diagnosis/molecular-subtypes. [Accessed: Jan. 4, 2025].
 
-\bibitem{b2} Saha A, Harowicz MR, Grimm LJ, Kim CE, Ghate SV, Walsh R, Mazurowski MA. A machine learning approach to radiogenomics of breast cancer: a study of 922 subjects and 529 DCE-MRI features. Br J Cancer. 2018 Aug;119(4):508-516. doi: 10.1038/s41416-018-0185-8. Epub 2018 Jul 23. PMID: 30033447; PMCID: PMC6134102.
+\bibitem{b2} A. Saha, M. R. Harowicz, L. J. Grimm, C. E. Kim, S. V. Ghate, R. Walsh, and M. A. Mazurowski, "A machine learning approach to radiogenomics of breast cancer: a study of 922 subjects and 529 DCE-MRI features," *Br. J. Cancer*, vol. 119, no. 4, pp. 508–516, Aug. 2018, doi: 10.1038/s41416-018-0185-8.
 
-\bibitem{b3} Morris, E., Burnside, E., Whitman, G., Zuley, M., Bonaccio, E., Ganott, M., Sutton, E., Net, J., Brandt, K., Li, H., Drukker, K., Perou, C., \& Giger, M. L. (2014). Using Computer-extracted Image Phenotypes from Tumors on Breast MRI to Predict Stage [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2014.8SIPIY6G
+\bibitem{b3} E. Morris, E. Burnside, G. Whitman, M. Zuley, E. Bonaccio, M. Ganott, E. Sutton, J. Net, K. Brandt, H. Li, K. Drukker, C. Perou, and M. L. Giger, "Using Computer-extracted Image Phenotypes from Tumors on Breast MRI to Predict Stage [Data set]," *The Cancer Imaging Archive*, 2014. Available: https://doi.org/10.7937/K9/TCIA.2014.8SIPIY6G.
 
-\bibitem{b4} Brandt, J., Garne, J.P., Tengrup, I. et al. Age at diagnosis in relation to survival following breast cancer: a cohort study. World J Surg Onc 13, 33 (2015). https://doi.org/10.1186/s12957-014-0429-x
+\bibitem{b4} J. Brandt, J. P. Garne, I. Tengrup, et al., "Age at diagnosis in relation to survival following breast cancer: a cohort study," *World J. Surg. Oncol.*, vol. 13, no. 33, 2015. doi: 10.1186/s12957-014-0429-x.
 
-\bibitem{b5} Komen, S. Foundation. Factors that Affect Prognosis: Lymph Node Status. Komen.org. Available at: https://www.komen.org/breast-cancer/diagnosis/factors-that-affect-prognosis/lymph-node-status (Accessed January 5, 2025).
+\bibitem{b5} S. Komen Foundation. "Factors that Affect Prognosis: Lymph Node Status." Available: https://www.komen.org/breast-cancer/diagnosis/factors-that-affect-prognosis/lymph-node-status. [Accessed: Jan. 5, 2025].
 
-\bibitem{b6} Wikipedia. "Breast cancer classification." Available: https://en.wikipedia.org/wiki/Breast\_cancer\_classification. [Accessed: Jan. 5, 2025]
+\bibitem{b6} Wikipedia. "Breast cancer classification." Available: https://en.wikipedia.org/wiki/Breast\_cancer\_classification. [Accessed: Jan. 5, 2025].
 
-\bibitem{b7} Syed, Y.Y. Oncotype DX Breast Recurrence Score®: A Review of its Use in Early-Stage Breast Cancer. Mol Diagn Ther 24, 621–632 (2020). https://doi.org/10.1007/s40291-020-00482-7
+\bibitem{b7} Y. Y. Syed, "Oncotype DX Breast Recurrence Score®: A Review of its Use in Early-Stage Breast Cancer," *Mol. Diagn. Ther.*, vol. 24, pp. 621–632, 2020. doi: 10.1007/s40291-020-00482-7.
 
 \bibitem{b8} Wikipedia. "MammaPrint." Available: https://en.wikipedia.org/wiki/MammaPrint. [Accessed: Jan. 5, 2025].
 
