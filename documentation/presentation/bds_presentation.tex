@@ -18,16 +18,20 @@
 % https://github.com/lucasamtaylor01/IME-template
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[11pt]{beamer}
+\documentclass[10pt]{beamer}
 
 \graphicspath{{img/}}
 
-\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[numbers]{natbib}
 \usepackage{booktabs}
 \usepackage{palatino}
 \usepackage[default]{opensans}
 \usepackage{subcaption}
 \usepackage{array}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{colortbl,xcolor} 
 \input{config/code_langs}
 
 %----------------------------------------------------------------------------------------
@@ -120,7 +124,26 @@
 \include{sections/section02}
 \include{sections/section03}
 \include{sections/section04}
-
 %------------------
+
+\begin{frame}
+    \frametitle{References}
+    \scriptsize
+    \begin{thebibliography}{99}
+\bibitem{breast_cancer} World Health Organization. "Cancer: Fact Sheets." Available: https://www.who.int/news-room/fact-sheets/detail/cancer. [Accessed: Jan. 5, 2025].
+
+\bibitem{b1} S. Komen Foundation. "Molecular Subtypes of Breast Cancer." Available: https://www.komen.org/breast-cancer/diagnosis/molecular-subtypes. [Accessed: Jan. 4, 2025].
+
+\bibitem{b3} E. Morris, E. Burnside, G. Whitman, M. Zuley, E. Bonaccio, M. Ganott, E. Sutton, J. Net, K. Brandt, H. Li, K. Drukker, C. Perou, and M. L. Giger, "Using Computer-extracted Image Phenotypes from Tumors on Breast MRI to Predict Stage [Data set]," *The Cancer Imaging Archive*, 2014. Available: https://doi.org/10.7937/K9/TCIA.2014.8SIPIY6G.
+
+\bibitem{b5} S. Komen Foundation. "Factors that Affect Prognosis: Lymph Node Status." Available: https://www.komen.org/breast-cancer/diagnosis/factors-that-affect-prognosis/lymph-node-status. [Accessed: Jan. 5, 2025].
+
+\bibitem{b6} Wikipedia. "Breast cancer classification." Available: https://en.wikipedia.org/wiki/Breast\_cancer\_classification. [Accessed: Jan. 5, 2025].
+
+\bibitem{b7} Y. Y. Syed, "Oncotype DX Breast Recurrence Score®: A Review of its Use in Early-Stage Breast Cancer," *Mol. Diagn. Ther.*, vol. 24, pp. 621–632, 2020. doi: 10.1007/s40291-020-00482-7.
+
+\bibitem{b8} Wikipedia. "MammaPrint." Available: https://en.wikipedia.org/wiki/MammaPrint. [Accessed: Jan. 5, 2025].
+    \end{thebibliography}
+\end{frame}
 
 \end{document}
